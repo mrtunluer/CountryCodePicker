@@ -5,8 +5,7 @@ The CountryCodePicker is a customizable Android component designed for easy and 
 
 ## Screenshots
 
-![App Screenshot](https://github-production-user-asset-6210df.s3.amazonaws.com/75806927/329186338-4282e7ba-5cf4-474b-8770-1e89315e6a5c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240509%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240509T085121Z&X-Amz-Expires=300&X-Amz-Signature=493199a94ab89eba6565f3b39dc06f9d0b5d665a24d6ad5da787a8694d7b56f8&X-Amz-SignedHeaders=host&actor_id=75806927&key_id=0&repo_id=677483873)
-
+![screenshot](https://github.com/mrtunluer/CountryCodePicker/assets/75806927/c9da9537-077e-473e-8f31-bc6510555e9f)
 
 ## Usage/Examples
 
@@ -121,7 +120,6 @@ To include CountryCodePicker in your project, add the following to your build co
   implementation("com.github.mrtunluer:CountryCodePicker:<latest-version>")
   ```
 </details>
-## License
 
 <div align="start"> <h2 align="start">License</h1> </div>
 
