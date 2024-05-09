@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     kotlin("plugin.serialization") version "1.9.0"
+    id("maven-publish")
 }
 
 android {
@@ -35,6 +36,16 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
+    }
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
     }
 }
 
