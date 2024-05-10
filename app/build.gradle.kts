@@ -49,8 +49,8 @@ android {
 }
 
 dependencies {
-    implementation("com.github.mrtunluer:CountryCodePicker:1.0.0")
-    //implementation(project(":countrycodepicker"))
+    //implementation("com.github.mrtunluer:CountryCodePicker:1.1.0")
+    implementation(project(":countrycodepicker"))
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")

@@ -1,7 +1,6 @@
 # CountryCodePicker
 
-The CountryCodePicker is a customizable Android component designed for easy and efficient country and dial code selection in your Android applications. It utilizes the latest in Android Compose UI elements to provide a smooth and integrated experience.
-
+The CountryCodePicker is a customizable Android library designed for easy and efficient country and dial code selection in your Android applications. It utilizes the latest Android Compose UI elements to provide a smooth and integrated experience.
 
 ## Screenshots
 
@@ -26,6 +25,7 @@ CountryCodePicker(
     bottomSheetTitleContent = {
         Text(text = "Select Country", fontSize = 16.sp)
     },
+    initialNumber = "3341234221",
     bottomSheetCloseIcon = Icons.Filled.Close,
     onCountryName = { countryName ->
         println("Country Name: $countryName")
@@ -71,6 +71,7 @@ fun CountryCodePicker(
     placeholder: @Composable (() -> Unit)? = null,
     textStyle: TextStyle = LocalTextStyle.current,
     dialCodeTextStyle: TextStyle = LocalTextStyle.current,
+    initialNumber: String = "",
     initialCountryCode: CountryCode = CountryCode.TR,
     showFlag: Boolean = true,
     showDialCode: Boolean = true,

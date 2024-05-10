@@ -44,6 +44,7 @@ class MainActivity : ComponentActivity() {
                         Text(text = "Select Country", fontSize = 16.sp)
                     },
                     bottomSheetCloseIcon = Icons.Filled.Close,
+                    initialNumber = "3341234221",
                     onCountryName = { countryName ->
                         println("Country Name: $countryName")
                     },

@@ -54,6 +54,7 @@ fun CountryCodePicker(
     placeholder: @Composable (() -> Unit)? = null,
     textStyle: TextStyle = LocalTextStyle.current,
     dialCodeTextStyle: TextStyle = LocalTextStyle.current,
+    initialNumber: String = "",
     initialCountryCode: CountryCode = CountryCode.TR,
     showFlag: Boolean = true,
     showDialCode: Boolean = true,
@@ -78,7 +79,7 @@ fun CountryCodePicker(
         countries.find { it.code == initialCountryCode.code } ?: countries.first()
     }
     val selectedCountry = remember { mutableStateOf(defaultCountry) }
-    var phoneNumber by remember { mutableStateOf("") }
+    var phoneNumber by remember { mutableStateOf(initialNumber) }
     var showBottomSheet by remember { mutableStateOf(false) }
     val interactionSource = remember { MutableInteractionSource() }
 
