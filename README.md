@@ -9,10 +9,7 @@ The CountryCodePicker is a customizable Android library designed for easy and ef
 ## Usage/Examples
 
 ```kotlin
-CountryCodePicker(
-    modifier = Modifier
-        .fillMaxWidth()
-        .padding(horizontal = 50.dp),
+CountryCodePicker(modifier = Modifier.fillMaxWidth().padding(horizontal = 50.dp),
     onFullNumber = { fullNumber ->
         println("Full Number: $fullNumber")
     },
@@ -25,8 +22,8 @@ CountryCodePicker(
     bottomSheetTitleContent = {
         Text(text = "Select Country", fontSize = 16.sp)
     },
-    initialNumber = "3341234221",
     bottomSheetCloseIcon = Icons.Filled.Close,
+    initialNumber = "3341234221",
     onCountryName = { countryName ->
         println("Country Name: $countryName")
     },
@@ -41,9 +38,7 @@ CountryCodePicker(
     dialCodeTextStyle = TextStyle(fontSize = 14.sp, color = Color.Black),
     bottomSheetSearchField = { searchQuery, onQueryChanged ->
         OutlinedTextField(value = searchQuery,
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(start = 16.dp, end = 16.dp),
+            modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 16.dp),
             onValueChange = onQueryChanged,
             singleLine = true,
             colors = OutlinedTextFieldDefaults.colors(
@@ -53,8 +48,7 @@ CountryCodePicker(
                 unfocusedBorderColor = Color.DarkGray
             ),
             placeholder = { Text("Search countries...") })
-    }
-)
+    })
 ```
 
 
@@ -89,7 +83,7 @@ fun CountryCodePicker(
     bottomSheetCloseIcon: ImageVector? = null,
     countryItemNameTextStyle: TextStyle = LocalTextStyle.current,
     countryIDialCodeTextStyle: TextStyle = LocalTextStyle.current,
-)
+) 
 ```
 ## Download
 To include CountryCodePicker in your project, add the following to your build configuration:

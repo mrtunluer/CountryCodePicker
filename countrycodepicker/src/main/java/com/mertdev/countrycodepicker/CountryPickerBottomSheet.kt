@@ -61,11 +61,12 @@ fun CountryPickerModalBottomSheet(
         countries.filter {
             it.name.contains(searchQuery, ignoreCase = true) || it.dialCode.contains(
                 searchQuery, ignoreCase = true
-            )
+            ) || it.code.contains(searchQuery, ignoreCase = true)
         }
     }
 
-    ModalBottomSheet(sheetState = sheetState,
+    ModalBottomSheet(
+        sheetState = sheetState,
         onDismissRequest = {
             onDismiss()
         },

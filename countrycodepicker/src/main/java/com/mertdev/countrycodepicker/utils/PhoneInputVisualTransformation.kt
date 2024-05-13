@@ -9,7 +9,7 @@ class PhoneInputVisualTransformation(private var format: String) : VisualTransfo
     private val maxLength: Int
 
     init {
-        val significantStartIndex = format.indexOfFirst { it == '-' || it == '(' }
+        val significantStartIndex = format.indexOfFirst { it == '-' || it == '(' || it == ' ' }
         if (significantStartIndex > 0) {
             format = format.substring(significantStartIndex)
         }
